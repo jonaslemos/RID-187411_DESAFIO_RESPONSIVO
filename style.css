@@ -6,17 +6,19 @@ html{
     box-sizing: border-box;
 }
 body{
+width: 100vw;
 margin: 0;
 }
 
 #navbar{
     background-color: #02A28F;
     padding: 0.9rem;
-    height: 4.3rem;
-    position: relative;
+    height: 4.5rem;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+    padding: 1rem;
+
+    
     
     
     
@@ -24,6 +26,7 @@ margin: 0;
 #navbar-text{
     margin-left: 6.5rem;
     font-size: 2.25rem;
+    font-weight: 700;
     color: #FFFFFF;
 }
 
@@ -34,7 +37,9 @@ margin: 0;
     width: 46.5rem;
     background-size: cover;
     border-radius: 0.6rem;
-    margin-top: 2.5rem;  
+    margin-top: 2.5rem; 
+    gap: 0.5rem;
+
 }
 
 #text-banner{
@@ -139,7 +144,7 @@ margin: 0;
     margin-top: 1.5rem;
 }
 
-#container-posts{
+#sidebar-1{
     width: 22.5rem;
     height: 24.75rem;
     top: 7.5rem;
@@ -151,7 +156,7 @@ margin: 0;
     
     
 }
-#title-posts{
+#title-barra-1{
 
     background-color: #02A28F;
     border-radius: 0.6rem 0.6rem 0.6rem 0.6rem;
@@ -167,7 +172,7 @@ margin: 0;
     font-size: 0.75rem;
     color: #616161;
 }
-#title-posts h2 {
+#title-barra-1 h2 {
     margin-left: 1.25rem;
     font-size: 1.25rem;
 }
@@ -234,7 +239,7 @@ margin: 0;
     font-size: 1rem;
     color: #616161;
 }
-#side-categorys{
+#sidebar-2{
     margin-left: 56rem ;
     margin-top: 1.5rem;
 }
@@ -251,7 +256,7 @@ margin: 0;
     font-size: 0.8rem;
     color: #FFFFFF;
 }
-@media only screen and (max-width:768px) {
+@media  (max-width:768px) {
     
     
     
@@ -260,39 +265,45 @@ margin: 0;
     flex-direction: column;
     display: flex;
     align-items: center;
+   
 }
     #navbar{
         background-color: #02A28F;
-        width: 100%;
-        right: 4rem;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 1rem;
-           
-        
-       
-
+        width:100%;
+        height: 50px;
+        margin: 0%;
+        margin-bottom:1rem ;
     
     }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
     #navbar-text{
-        
-        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 24px;
         color: #FFFFFF;
     }
     
     #container-banner{
         
-        background: linear-gradient(to bottom, rgba(102, 102, 102, 0) 0%, #000000 100%),url(imagen-banner.svg/predios.jpg);
-        height: 24rem;
+        background: linear-gradient(to top, #000000, transparent), url(imagen-banner.svg/predios.jpg) no-repeat center;
         width: 23rem;
         background-size: cover;
         border-radius: 0.6rem 0.6rem 0.6rem 0.6rem;
         margin-top: 2.5rem;
         margin:0;
         margin-bottom: 1rem;
-
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
         
-
     }
     
     #text-banner{
@@ -320,7 +331,8 @@ margin: 0;
         align-items: center;
         margin: 0%;
         margin-bottom: 0.5rem;
-        
+        margin-left: auto;
+        margin-right: auto;
 
     }
     #title-section h2 {
@@ -401,7 +413,7 @@ margin: 0;
         margin-top: 1.5rem;
     }
 
-    #container-posts{
+    #sidebar-1{
         width: 23rem;
         height: 24.75rem;
         top: 7.5rem;
@@ -415,7 +427,7 @@ margin: 0;
     
         
     }
-    #nvbar-posts{
+    #title-barra-1{
     
     
         background-color: #02A28F;
@@ -432,7 +444,7 @@ margin: 0;
         font-size: 0.75rem;
         color: #616161;
     }
-    #nvbar-posts h2 {
+    #title-barra-1 h2 {
         margin-left: 1.25rem;
         font-size: 1.25rem;
     }
@@ -502,7 +514,7 @@ margin: 0;
         font-size: 1rem;
         color: #616161;
     }
-    #side-categorys{
+    #sidebar-2{
         
         margin-top:28rem;
         margin: 0%;
